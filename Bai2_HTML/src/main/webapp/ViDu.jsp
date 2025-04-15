@@ -54,6 +54,34 @@ public static void main() {
 	<u>Thẻ gạch dưới</u>
 	<i>In nghiêng </i>
 	<hr/> <!--  Dùng gạch ngang và xuống dòng -->
-	
+	<table width="100%" border="1" id="table-1">
+		<thead >
+			<tr>
+				<th width="10%">STT</th>
+				<th width="70%">Họ Và Tên</th>
+				<th  width="20%">Điểm số</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Loc</td>
+				<td rowspan="2">23</td>
+			</tr>
+			<tr>
+				<td>2</th>
+				<td>Minh</th>
+		
+			</tr>
+			<tr>
+				<td colspan="2">3</th>
+				
+				<td>45</th>
+			</tr>
+		</tbody>
+		<tfoot>
+			
+		</tfoot>
+	</table>
 </body>
 </html>
