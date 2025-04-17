@@ -5,29 +5,39 @@
 <title>Đăng Ký</title>
 </head>
 <body>
-<h1>Đăng Ký Thành Viên</h1>
-<table id="table-1">
-	<thead>
-		<tr>
-			<th>A</th>
-			<th>B</th>
-			<th>C</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>a</td>
-			<td>b</td>
-			<td>c</td>
-		</tr>
-	</tbody>
-	<tfoot>
-		<tr>
-			<th>A</th>
-			<th>B</th>
-			<th>C</th>
-		</tr>
-	</tfoot>
-</table>
+	<h1>Đăng Ký Thành Viên</h1>
+	<table id="table-1" bordercolor="grey" width="50%">
+		<tbody>
+			<td colspan="2"><h4>THÔNG TIN ĐĂNG NHẬP</h4></td>
+
+			<tr>
+				<td>Email:</td>
+				<td><input type="text" name="email" id="idEmail"></td>
+			</tr>
+			<tr>
+				<td>Mật Khẩu:</td>
+				<td><input type="password" name="pass" id="idPass"></td>
+			</tr>
+			<tr>
+				<td>Nhập lại mật khẩu:</td>
+				<td><input type="password" name="rePass" id="idRePass"></td>
+			</tr>
+			<td colspan="2"><h4>THÔNG TIN CÁ NHÂN</h4></td>
+			<tr>
+				<td>Họ Và Tên</td>
+				<td><input type="text" name="hoVanTen" id="idHoVanTen"></td>
+			</tr>
+			<tr>
+				<td>Giới Tính:</td>
+				<td>
+				<input type="radio" name="gioiTinh" id="idGioiTinhM"
+					value="M"> <label for="idGioiTinhM">Nam</label> 
+					<input
+					type="radio" name="gioiTinh" id="idGioiTinhF" value="F"> <label
+					for="idGioiTinhF">Nữ</label></td>
+			</tr>
+		</tbody>
+
+	</table>
 </body>
 </html>
