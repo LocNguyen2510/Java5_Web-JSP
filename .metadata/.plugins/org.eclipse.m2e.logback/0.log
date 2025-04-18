@@ -11,3 +11,12 @@
 2025-04-17 10:44:13,930 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2025-04-17 18:21:11,816 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2025-04-17 19:08:08,923 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-04-18 09:24:37,462 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-04-18 09:29:55,353 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.0.19; built: 2025-04-01T13:28:40.005Z; git: 23436cd577b4238238eb192683dfc2b1476c6b87; jvm 23.0.2+7
+2025-04-18 09:29:55,495 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@49f2736{/wse,/wse,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@3174655e{STARTED}}
+2025-04-18 09:29:55,497 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2025-04-18 09:29:55,566 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@5aaac473{HTTP/1.1, (http/1.1)}{0.0.0.0:56135}
+2025-04-18 09:29:55,639 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@117e175f{STARTING}[12.0.19,sto=0] @428916ms
+2025-04-18 09:29:56,683 [qtp978597452-208] INFO  o.e.j.e.nested.ContextHandler._wse - Warning: No org.apache.tomcat.JarScanner set in ServletContext. Falling back to default JarScanner implementation.
+2025-04-18 13:35:37,275 [Framework stop - Equinox Container: 8dcc8235-1490-4938-a6d7-b2142eb1ad3a] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@117e175f{STOPPING}[12.0.19,sto=0]
+2025-04-18 13:35:37,281 [Framework stop - Equinox Container: 8dcc8235-1490-4938-a6d7-b2142eb1ad3a] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@5aaac473{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
