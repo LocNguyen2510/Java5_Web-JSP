@@ -754,5 +754,5 @@
   <uri name="javaee_5.xsd" uri="jar:file:/C:/Users/admin/eclipse/java-2024-12/eclipse/../../../.p2/pool/plugins/org.jboss.tools.jst.web_3.10.500.v20230911-1226.jar!/catalog/javaee_5.xsd"/>
   <uri name="http://java.sun.com/xml/ns/javaee/web-facelettaglibary_2_0.xsd" uri="jar:file:/C:/Users/admin/eclipse/java-2024-12/eclipse/../../../.p2/pool/plugins/org.jboss.tools.jst.web_3.10.500.v20230911-1226.jar!/catalog/web-facelettaglibrary_2_0.xsd"/>
   <uri name="http://java.sun.com/xml/ns/javaee/web-facelettaglibrary_2_0.xsd" uri="jar:file:/C:/Users/admin/eclipse/java-2024-12/eclipse/../../../.p2/pool/plugins/org.jboss.tools.jst.web_3.10.500.v20230911-1226.jar!/catalog/web-facelettaglibrary_2_0.xsd"/>
-  <public publicId="-//Sun Microsystems, Inc.//DTD Facelet Taglib 1.0//EN" uri="jar:file:/C:/Users/admin/.p2/pool/plugins/org.eclipse.jst.jsf.facelet.core_1.5.0.v202504081535.jar!/dtd/facelet-taglib_1_0.dtd" webURL="facelet-taglib_1_0.dtd"/>
+  <public publicId="-//Sun Microsystems, Inc.//DTD Facelet Taglib 1.0//EN" uri="jar:file:/C:/Users/admin/eclipse/java-2024-12/eclipse/../../../.p2/pool/plugins/org.eclipse.jst.jsf.facelet.core_1.5.0.v202504081535.jar!/dtd/facelet-taglib_1_0.dtd" webURL="facelet-taglib_1_0.dtd"/>
 </catalog>
