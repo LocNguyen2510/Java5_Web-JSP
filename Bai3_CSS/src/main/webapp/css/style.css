@@ -1,4 +1,24 @@
-a{
+a {
 	color: green;
 	font-size: 20px
+}
+
+#indam {
+	font-weight: bold;
+}
+
+.innghieng {
+	font-style: italic;
+}
+
+h1 {
+	color: black;
+	background: yellow;
+	font-weight: bold;
+}
+h1 ,h2,h3{
+	color: blue;
+}
+h1.maudo{
+	color: red
 }
