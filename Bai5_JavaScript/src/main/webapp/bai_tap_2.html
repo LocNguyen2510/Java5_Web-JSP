@@ -3,8 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
 </head>
 <body>
+<div id="my_div">Nội dung ban đầu
+</div>
+<input type="button" id="change" value="Thay đổi">
+<script >
 
+	var change =document.getElementById("change");
+	change.onclick=function(){
+		window.alert("test");
+		var my_div=document.getElementById("my_div");
+	my_div.innerHTML="Noi Dung Thay Doi";
+}</script>
 </body>
 </html>
