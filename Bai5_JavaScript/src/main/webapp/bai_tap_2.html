@@ -6,16 +6,20 @@
 
 </head>
 <body>
-<div id="my_div">Nội dung ban đầu
-</div>
-<input type="button" id="change" value="Thay đổi">
-<script >
-
-	var change =document.getElementById("change");
+	<div id="my_div">Nội dung ban đầu</div>
+	<input type="button" id="change" value="Thay đổi" onclick="changeText">
+	<script>	var change =document.getElementById("change");
 	change.onclick=function(){
 		window.alert("test");
 		var my_div=document.getElementById("my_div");
 	my_div.innerHTML="Noi Dung Thay Doi";
-}</script>
+}
+	//Cach 2:
+/* 	function changeText(){
+		var my_div =document.getElementById("my_div");
+		my_div.innerHTML="Noi Dung Bi Thay Doi";
+		}
+ */
+	</script>
 </body>
 </html>
