@@ -5,6 +5,25 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<div style="background-color: red" id="my_div"
+		onmouseover="changeColorGreen()" onmouseleave="backColorRed()">
 
+
+		SAB: Lợi nhuận về đáy 3 năm sau khi sáp nhập Sabibeco
+		<hr>
+		Dự báo khó khăn nhưng ngân hàng kỳ vọng lãi lớn
+		<hr>
+		GMD: Triển vọng nào cho Gemadept trước “cơn bão” thuế quan?
+	</div>
+	<script>
+function changeColorGreen(){
+	var my_div =document.getElementById("my_div");
+	my_div.style="background-color: green;"
+}
+function backColorRed(){
+	var my_div =document.getElementById("my_div");
+	my_div.style="background-color: red;"
+}
+</script>
 </body>
 </html>
