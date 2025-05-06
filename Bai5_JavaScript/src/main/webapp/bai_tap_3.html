@@ -15,15 +15,34 @@
 		<hr>
 		GMD: Triển vọng nào cho Gemadept trước “cơn bão” thuế quan?
 	</div>
+	<button onclick="hidden_div()" id="my_button">Ẩn / Hiện</button>
 	<script>
-function changeColorGreen(){
+var check="hidden";
+	function hidden_div(){
+		var my_div =document.getElementById("my_div");
+		if(check=="hidden"){
+	/* 		my_div.style= "display=none"; */
+			my_div.style.display= "none";
+			check="show";
+		}
+		else{
+			/* my_div.style= "display=block"; */
+			my_div.style.display="block";
+				check="hidden";
+			}
+	
+	}
+
+	
+/* function changeColorGreen(){
 	var my_div =document.getElementById("my_div");
 	my_div.style="background-color: green;"
 }
 function backColorRed(){
 	var my_div =document.getElementById("my_div");
 	my_div.style="background-color: red;"
-}
+} */
+
 </script>
 </body>
 </html>
