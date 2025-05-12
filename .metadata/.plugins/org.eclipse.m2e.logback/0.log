@@ -45,3 +45,13 @@
 2025-05-09 09:46:16,385 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2025-05-09 18:18:07,201 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2025-05-10 20:36:32,981 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-05-11 18:03:59,445 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-05-12 09:48:44,661 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-05-12 10:45:14,003 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.0.19; built: 2025-04-01T13:28:40.005Z; git: 23436cd577b4238238eb192683dfc2b1476c6b87; jvm 23.0.2+7
+2025-05-12 10:45:14,144 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@539d0da2{/wse,/wse,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@3aedbf69{STARTED}}
+2025-05-12 10:45:14,146 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2025-05-12 10:45:14,204 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@26437e34{HTTP/1.1, (http/1.1)}{0.0.0.0:62176}
+2025-05-12 10:45:14,219 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@221835b{STARTING}[12.0.19,sto=0] @3473958ms
+2025-05-12 10:45:15,424 [qtp1292744826-184] INFO  o.e.j.e.nested.ContextHandler._wse - Warning: No org.apache.tomcat.JarScanner set in ServletContext. Falling back to default JarScanner implementation.
+2025-05-12 13:20:29,296 [Framework stop - Equinox Container: 785e35fd-a9e6-4814-be8e-f8ee9a3d1f34] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@221835b{STOPPING}[12.0.19,sto=0]
+2025-05-12 13:20:29,301 [Framework stop - Equinox Container: 785e35fd-a9e6-4814-be8e-f8ee9a3d1f34] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@26437e34{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
