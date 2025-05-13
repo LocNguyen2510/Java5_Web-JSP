@@ -11,7 +11,12 @@
 	String hoVaTen = request.getParameter("hoVaTen");
 	String email = request.getParameter("email");
 	String soLuong = request.getParameter("soLuong");
-	int soLuongSanPham = Integer.parseInt(soLuong);
+	int soLuongSanPham =0;
+	try{soLuongSanPham=Integer.parseInt(soLuong);}
+	catch(Exception e){
+		
+	}
+			
 	%>
 	<h1>Xác Nhận Đặt Hàng</h1>
 	<p>
@@ -20,9 +25,8 @@
 		có email là <b> <%=email%>
 		</b> đã đặt
 		<%=soLuong%>
-		đơn hàng
-		<br/>
-		Số tiền bạn cần thanh toán là :<b> <%= soLuongSanPham * 50000%>VND</b>
+		đơn hàng <br /> Số tiền bạn cần thanh toán là :<b> <%= soLuongSanPham * 50000%>VND
+		</b>
 	</p>
 
 </body>
