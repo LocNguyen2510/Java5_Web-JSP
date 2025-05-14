@@ -20,6 +20,7 @@
 	crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="container">
 	<h1>Chọn Cấu Hình Máy Tính Bạn Cần Mua</h1>
 	</hr>
 	<form id="form-1">
@@ -59,17 +60,19 @@
 		</div>
 	</form>
 	<h2>Monitor</h2>
-	<select class="form-select" aria-label="Default select example">
+	<select class="form-select" aria-label="Default select example" name="monitor">
   <option selected>Monitor</option>
   <option value="1">2k 144hz IPS</option>
   <option value="2">FullHD 120hz VA</option>
   <option value="3">4k 60hz OLED</option>
 </select>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="fax" id="checkChecked" checked>
-  <label class="form-check-label" for="checkChecked">
-    Checked checkbox
-  </label>
+	<h2>Accessories</h2>
+	<select class="form-select" multiple aria-label="Multiple select example" name="accessories">
+  <option value="1">Camera</option>
+  <option value="2">Headphone</option>
+  <option value="3">Headset</option>
+</select>
+<button class="btn btn-primary mt-2 " type="submit" >Buy</button>
 </div>
 </body>
 </html>
