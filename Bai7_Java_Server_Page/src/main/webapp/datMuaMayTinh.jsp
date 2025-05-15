@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%  %>
+<% 
+//Radio Button => name
+String processor = request.getParameter("processor");
+%>
 </body>
 </html>
