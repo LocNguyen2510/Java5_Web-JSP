@@ -23,7 +23,7 @@
 <div class="container">
 	<h1>Chọn Cấu Hình Máy Tính Bạn Cần Mua</h1>
 	</hr>
-	<form id="form-1">
+	<form id="form-1" action="datMuaMayTinh.jsp">
 		<h2>Processor</h2>
 		<div class="form-check">
 			<input class="form-check-input" type="radio" name="processor"
