@@ -23,7 +23,7 @@
 <div class="container">
 	<h1>Chọn Cấu Hình Máy Tính Bạn Cần Mua</h1>
 	</hr>
-	<form id="form-1" action="datMuaMayTinh.jsp">
+	<form id="form-1" action="datMuaMayTinh.jsp" method="get">
 		<h2>Processor</h2>
 		<div class="form-check">
 			<input class="form-check-input" type="radio" name="processor"
@@ -40,8 +40,8 @@
 				id="core-i5" value="core-i5"> <label class="form-check-label"
 				for="core-i5" >Core-i5</label>
 		</div>
-	</form>
-	<form id="form-2">
+	
+	
 		<h2>RAM</h2>
 		<div class="form-check">
 			<input class="form-check-input" type="radio" name="ram"
@@ -58,7 +58,7 @@
 				id="ram-4gb" value="ram-4gb"> <label class="form-check-label"
 				for="ram-4gb" >Ram 4gb</label>
 		</div>
-	</form>
+	
 	<h2>Monitor</h2>
 	<select class="form-select" aria-label="Default select example" name="monitor">
   <option selected>Monitor</option>
@@ -73,6 +73,7 @@
   <option value="3">Headset</option>
 </select>
 <button class="btn btn-primary mt-2 " type="submit" >Buy</button>
+</form>
 </div>
 </body>
 </html>
