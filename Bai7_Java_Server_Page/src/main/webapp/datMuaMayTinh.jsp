@@ -37,6 +37,16 @@
 
 		}
 	}
+	String monitor = request.getParameter("monitor");
+	if(monitor !=null){
+		if(monitor.equals("1")){
+			tongTien += 5500000;
+		}else if(monitor.equals("2")){
+			tongTien += 3000000;
+		}else if(monitor.equals("3")){
+			tongTien += 4000000;
+		}
+	}
 	%>
 </body>
 </html>
