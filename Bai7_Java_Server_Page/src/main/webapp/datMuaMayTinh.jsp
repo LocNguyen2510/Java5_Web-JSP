@@ -1,3 +1,5 @@
+<%@page
+	import="org.eclipse.jdt.internal.compiler.lookup.ModuleBinding.UnNamedModule"%>
 <%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -38,42 +40,41 @@
 	}
 	//Ram
 	String ram = request.getParameter("ram");
+	double ramPrice = 0;
 	if (ram != null) {
 		if (ram.equals("ram-16gb")) {
-			tongTien += 1000000;
+			ramPrice = 1000000;
 		} else if (ram.equals("ram-8gb")) {
-			tongTien += 500000;
+			ramPrice = 500000;
 		}
 
 		else if (ram.equals("ram-4gb")) {
-			tongTien += 300000;
+			ramPrice = 300000;
 
 		}
+		tongTien += ramPrice;
 	}
 	String monitor = request.getParameter("monitor");
+	double monitorPrice = 0;
+	String nameMonitor = "";
 	if (monitor != null) {
-		if (monitor.equals("1")) {
-			tongTien += 5500000;
+		if (monitor.equals("0")) {
+
+		} else if (monitor.equals("1")) {
+			monitorPrice = 5500000;
+			nameMonitor = "2k 144hz IPS";
 		} else if (monitor.equals("2")) {
-			tongTien += 3000000;
+			nameMonitor = "FullHD 120hz VA";
+			monitorPrice = 3000000;
 		} else if (monitor.equals("3")) {
-			tongTien += 4000000;
+			nameMonitor = "4k 60hz OLED";
+			monitorPrice = 4000000;
+
 		}
+		tongTien += monitorPrice;
 	}
 
 	String[] accessoires = request.getParameterValues("accessories");
-	if(accessoires!=null)
-	for (String luaChon : accessoires) {
-		if (luaChon.equals("Camera")) {
-			tongTien += 800000;
-		}
-		if (luaChon.equals("HeadPhone")) {
-			tongTien += 1000000;
-		}
-		if (luaChon.equals("Headset")) {
-			tongTien += 1500000;
-		}
-	}
 	%>
 	<h1>Hóa Đơn</h1>
 	<table class="table">
@@ -94,7 +95,59 @@
 			<%
 			}
 			%>
+			<%
+			if (ram != null) {
+			%>
+			<tr>
+				<td><%=ram%></td>
+				<td><%=ramPrice%></td>
+			</tr>
+			<%
+			}
+			%>
+			<%
+			if (monitor != null && !monitor.trim().isEmpty()) {
+			%>
+			<tr>
+				<td><%=nameMonitor%></td>
+				<td><%=monitorPrice%></td>
+			</tr>
+			<%
+			}
+			%>
+			<%
+			if (accessoires != null)
+				for (String luaChon : accessoires) {
+					double price = 0;
+					if (luaChon.equals("Camera")) {
+				price = 800000;
+				tongTien += price;
+					}
+					if (luaChon.equals("Headphone")) {
+				price = 1000000;
+				tongTien += price;
+					}
+					if (luaChon.equals("Headset")) {
+				price = 1500000;
+				tongTien += price;
+					}
+			%>
+			<tr>
+				<td><%=luaChon%></td>
+				<td><%=price%></td>
+			</tr>
+			<%
+			}
+			%>
+			<tr>
+				<td colspan="2" style="color: highlight;"><h3>
+						Tổng Tiền =
+						<%=Math.round(tongTien)%> VND</h2></td>
+
+			</tr>
+
 		</tbody>
+
 	</table>
 
 </body>

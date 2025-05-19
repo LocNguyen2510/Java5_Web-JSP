@@ -61,16 +61,16 @@
 	
 	<h2>Monitor</h2>
 	<select class="form-select" aria-label="Default select example" name="monitor">
-  <option selected>Monitor</option>
+  <option selected value="">Monitor</option>
   <option value="1">2k 144hz IPS</option>
   <option value="2">FullHD 120hz VA</option>
   <option value="3">4k 60hz OLED</option>
 </select>
 	<h2>Accessories</h2>
 	<select class="form-select" multiple aria-label="Multiple select example" name="accessories">
-  <option value="1">Camera</option>
-  <option value="2">Headphone</option>
-  <option value="3">Headset</option>
+  <option value="Camera">Camera</option>
+  <option value="Headphone">Headphone</option>
+  <option value="Headset">Headset</option>
 </select>
 <button class="btn btn-primary mt-2 " type="submit" >Buy</button>
 </form>
