@@ -20,6 +20,7 @@
 	crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="container">
 	<form class="row g-3 needs-validation" novalidate>
 		<div class="col-md-4">
 			<label for="validationCustom01" class="form-label">First name</label>
@@ -73,5 +74,6 @@
 			<button class="btn btn-primary" type="submit">Submit form</button>
 		</div>
 	</form>
+	</div>
 </body>
 </html>
