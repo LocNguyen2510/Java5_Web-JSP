@@ -26,7 +26,7 @@
 </style>
 <body>
 	<div class="container mt-3">
-		<form class="row g-3 needs-validation" novalidate>
+		<form class="row g-3 needs-validation" action="save-Product">
 			<div class="row">
 				<div class="col-6">
 					<label for="maSanPham" class="form-label">Mã Sản Phẩm</label><span
@@ -73,7 +73,7 @@
 							name="moTa"></textarea>
 			</div>
 			<div class="row">
-				<button class="btn btn-primary" type="button">Lưu Sản Phẩm</button>
+				<button class="btn btn-primary" type="submit">Lưu Sản Phẩm</button>
 			</div>
 		</form>
 	</div>
