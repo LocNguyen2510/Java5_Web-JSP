@@ -23,15 +23,21 @@
 		//bắt lỗi
 		error = "";
 		maSanPham = document.getElementById("maSanPham").value;
-		if (maSanPhan.length == 0) {
+		giaBan = document.getElementById("giaBan").value;
+		if (maSanPham.length == 0) {
 			error = "Bạn phải nhập mã sản phẩm";
 		}
+		if (giaBan <= 0) {
+			error += " <br\> Ban phải nhập giá bán";
+		}
+
 		if (error.length > 0) {
 			alert(error);
+			return;
 		} else {
 
 			//submit
-			my_form = document.getElementById("myform");
+			my_form = document.getElementById("my_form");
 			my_form.submit();
 		}
 	}
