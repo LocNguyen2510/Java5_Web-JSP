@@ -28,7 +28,8 @@
 			error = "Bạn phải nhập mã sản phẩm";
 		}
 		if (giaBan <= 0) {
-			error += " <br\> Ban phải nhập giá bán";
+			error_giaBan= document.getElementById("error_giaBan");
+			error_giaBan.innerHTML="<span class ='rq'>Bạn cần nhập giá bán</span>";
 		}
 
 		if (error.length > 0) {
@@ -77,6 +78,7 @@
 					<label for="giaBan" class="form-label">Giá Bán</label><span
 						class="rq">*</span> <input type="number" step="0.01"
 						class="form-control" id="giaBan" name="giaBan" required>
+						<div id="error_giaBan"></div>
 				</div>
 			</div>
 			<div class="row">
