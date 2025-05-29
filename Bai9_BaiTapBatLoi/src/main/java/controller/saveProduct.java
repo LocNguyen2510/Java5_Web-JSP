@@ -37,7 +37,7 @@ public class saveProduct extends HttpServlet {
 		String moTa = request.getParameter("moTa");
 		//check
 		if(maSanPham==null || maSanPham.trim().length()==0) {
-			
+			request.setAttribute("", moTa);
 		}
 
 	}
