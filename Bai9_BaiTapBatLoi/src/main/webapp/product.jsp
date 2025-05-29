@@ -21,7 +21,7 @@
 <script>
 	function my_submit() {
 		//bắt lỗi
-		error = "";
+		var error = "";
 		maSanPham = document.getElementById("maSanPham").value;
 		giaBan = document.getElementById("giaBan").value;
 		if (maSanPham.length == 0) {
@@ -31,10 +31,11 @@
 			error_giaBan= document.getElementById("error_giaBan");
 			error_giaBan.innerHTML="<span class ='rq'>Bạn cần nhập giá bán</span>";
 		}
+	
 
 		if (error.length > 0) {
 			alert(error);
-			return;
+			return ;
 		} else {
 
 			//submit
