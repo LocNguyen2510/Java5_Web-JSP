@@ -49,7 +49,8 @@ public class saveProduct extends HttpServlet {
 		//url 
 		String url ="success.jsp";
 		if(e_maSanPham.length()>0) {
-			if
+			url="product.jsp";
+			RequestDispatcher rq = getServletContext().getRequestDispatcher(url);  
 		}
 	}
 
