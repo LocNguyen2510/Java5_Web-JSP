@@ -1,5 +1,7 @@
 package controller;
 
+import jakarta.security.auth.message.callback.SecretKeyCallback.Request;
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -35,11 +37,20 @@ public class saveProduct extends HttpServlet {
 		String hanSuDung_String = request.getParameter("hanSuDung");
 		String vat_String = request.getParameter("vat");
 		String moTa = request.getParameter("moTa");
-		//check
-		if(maSanPham==null || maSanPham.trim().length()==0) {
-			request.setAttribute("", moTa);
+		// check
+		String e_maSanPham = "";
+		if (maSanPham == null || maSanPham.trim().length() == 0) {
+			e_maSanPham = "Vui lòng nhập mã sản phẩm! ";
+		} else if (maSanPham.equals("123")) {
+			e_maSanPham += "Mã sản phẩm 123 đã tồn tại! Vui lòng nhập lại mã sản phẩm";
 		}
-
+		request.setAttribute("e_maSanPham", e_maSanPham);
+		 
+		//url 
+		String url ="success.jsp";
+		if(e_maSanPham.length()>0) {
+			if
+		}
 	}
 
 	/**
