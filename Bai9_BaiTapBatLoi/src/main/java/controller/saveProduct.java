@@ -30,6 +30,10 @@ public class saveProduct extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+
 		String maSanPham = request.getParameter("maSanPham");
 		String tenSanPham = request.getParameter("tenSanPham");
 		String giaBan_String = request.getParameter("giaBan");
@@ -45,13 +49,14 @@ public class saveProduct extends HttpServlet {
 			e_maSanPham += "Mã sản phẩm 123 đã tồn tại! Vui lòng nhập lại mã sản phẩm";
 		}
 		request.setAttribute("e_maSanPham", e_maSanPham);
-		 
-		//url 
-		String url ="success.jsp";
-		if(e_maSanPham.length()>0) {
-			url="product.jsp";
-			RequestDispatcher rq = getServletContext().getRequestDispatcher(url);  
+
+		// url
+		String url = "success.jsp";
+		if (e_maSanPham.length() > 0) {
+			url = "product.jsp";
 		}
+		RequestDispatcher rq = getServletContext().getRequestDispatcher(url);
+		rq.forward(request, response);
 	}
 
 	/**

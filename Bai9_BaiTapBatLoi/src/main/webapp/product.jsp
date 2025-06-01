@@ -28,14 +28,13 @@
 			error = "Bạn phải nhập mã sản phẩm";
 		}
 		if (giaBan <= 0) {
-			error_giaBan= document.getElementById("error_giaBan");
-			error_giaBan.innerHTML="<span class ='rq'>Bạn cần nhập giá bán</span>";
+			error_giaBan = document.getElementById("error_giaBan");
+			error_giaBan.innerHTML = "<span class ='rq'>Bạn cần nhập giá bán</span>";
 		}
-	
 
 		if (error.length > 0) {
 			alert(error);
-			return ;
+			return;
 		} else {
 
 			//submit
@@ -50,7 +49,10 @@
 	color: red
 }
 </style>
-<body>
+<body> 
+<%
+String e_maSanPham = request.getAttribute("e_maSanPham")+"";
+%>
 	<div class="container mt-3">
 		<form class="row g-3 needs-validation" action="save-Product">
 			<div class="row">
@@ -59,7 +61,9 @@
 						class="rq">*</span> <input type="text" class="form-control"
 						id="maSanPham" name="maSanPham" required>
 					<div class="valid-feedback">Looks good!</div>
-
+					<div>
+					<%=e_maSanPham %>
+					</div>
 				</div>
 				<div class="col-6">
 					<label for="tenSanPham" class="form-label">Tên Sản Phẩm</label><span
@@ -79,7 +83,7 @@
 					<label for="giaBan" class="form-label">Giá Bán</label><span
 						class="rq">*</span> <input type="number" step="0.01"
 						class="form-control" id="giaBan" name="giaBan" required>
-						<div id="error_giaBan"></div>
+					<div id="error_giaBan"></div>
 				</div>
 			</div>
 			<div class="row">
