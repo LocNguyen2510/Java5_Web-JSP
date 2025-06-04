@@ -49,20 +49,22 @@
 	color: red
 }
 </style>
-<body> 
-<%
-String e_maSanPham = request.getAttribute("e_maSanPham")+"";
-%>
+<body>
+	<%
+	String e_maSanPham = request.getAttribute("e_maSanPham") + "";
+	String value_maSanPham = request.getAttribute("e_maSanPham") + "";
+	%>
 	<div class="container mt-3">
 		<form class="row g-3 needs-validation" action="save-Product">
 			<div class="row">
 				<div class="col-6">
 					<label for="maSanPham" class="form-label">Mã Sản Phẩm</label><span
 						class="rq">*</span> <input type="text" class="form-control"
-						id="maSanPham" name="maSanPham" required>
+						value="<%=value_maSanPham%>" id="maSanPham" name="maSanPham"
+						required>
 					<div class="valid-feedback">Looks good!</div>
 					<div>
-					<%=e_maSanPham %>
+						<%=e_maSanPham%>
 					</div>
 				</div>
 				<div class="col-6">

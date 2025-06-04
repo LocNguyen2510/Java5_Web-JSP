@@ -48,12 +48,24 @@ public class saveProduct extends HttpServlet {
 		} else if (maSanPham.equals("123")) {
 			e_maSanPham += "Mã sản phẩm 123 đã tồn tại! Vui lòng nhập lại mã sản phẩm";
 		}
+	
 		request.setAttribute("e_maSanPham", e_maSanPham);
+		
+		//forward value
+		request.setAttribute("value_maSanPham", maSanPham);
+		request.setAttribute("value_tenSanPham", tenSanPham);
+		request.setAttribute("value_giaBan", giaBan_String);
+		request.setAttribute("value_giaNhap", giaNhap_String);
+		request.setAttribute("value_hanSuDung", hanSuDung_String);
+		request.setAttribute("value_vat", vat_String);
+		request.setAttribute("value_moTa", moTa);
+		
+		
 
 		// url
-		String url = "success.jsp";
+		String url = "/success.jsp";
 		if (e_maSanPham.length() > 0) {
-			url = "product.jsp";
+			url = "/product.jsp";
 		}
 		RequestDispatcher rq = getServletContext().getRequestDispatcher(url);
 		rq.forward(request, response);
